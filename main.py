@@ -7,8 +7,12 @@ import os
 from dotenv import load_dotenv
 from openai import OpenAI
 
+
 load_dotenv()
-print(os.getenv("OPENROUTER_API_KEY"))
+api_key = os.getenv("OPENROUTER_API_KEY") or st.secrets["OPENROUTER_API_KEY"]
+
+
+# print(os.getenv("OPENROUTER_API_KEY"))
 
 # client = OpenAI(
 #     api_key=os.getenv("OPENROUTER_API_KEY"),
