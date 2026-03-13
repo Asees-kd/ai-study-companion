@@ -1,6 +1,5 @@
-# streamlit
-# openai
-# python-dotenv
+
 streamlit
 google-generativeai
+openai
 python-dotenv
